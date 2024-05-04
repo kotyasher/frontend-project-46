@@ -4,6 +4,8 @@ install:
 lint:
 		npx eslint .
 
-fix:
+lintfix:
 		npx eslint --fix .
 
+genfiff:
+	node bin/gendiff.js
