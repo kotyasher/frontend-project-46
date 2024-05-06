@@ -1,14 +1,11 @@
 env:
-  browser: true
-  es2021: true
-extends: airbnb-base
+  node: true
+extends:
+  - airbnb-base
 parserOptions:
-  ecmaVersion: latest
+  ecmaVersion: 11
   sourceType: module
-rules: 
+rules:
   no-console: 0
-  import/extensions: # FIXME: remove when rule will be adjusted for new nodejs version
-    - error
-    - ignorePackages
-    - js: always
-
+  import/extensions: 0
+  no-undef: 0
