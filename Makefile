@@ -7,5 +7,5 @@ lint:
 lintfix:
 		npx eslint --fix .
 
-genfiff:
-	node bin/gendiff.js
+mygenfiff:
+	node bin/mygendiff.js

@@ -4,7 +4,7 @@
   "description": "[![Actions Status](https://github.com/kotyasher/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/kotyasher/frontend-project-46/actions)",
   "main": "src/index.js",
   "bin": {
-    "gendiff": "bin/gendiff.js"
+    "mygendiff": "bin/mygendiff.js"
   },
   "type": "module",
   "scripts": {
@@ -20,6 +20,10 @@
     "commander": "^12.0.0"
   },
   "devDependencies": {
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.24.5",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
     "globals": "^15.1.0"
   }
 }

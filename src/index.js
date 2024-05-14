@@ -1,17 +1,21 @@
-import { readFileSync } from 'fs';
+import fs from 'fs';
 import path from 'path';
+import process from 'process';
 
-const genDiff = (filePath1, filePath2) => {
-  const pathFile1 = path.resolve(process.cwd(), filePath1);
-  const pathFile2 = path.resolve(process.cwd(), filePath2);
+const getAbsolutePath = (filepath) => path.resolve(process.cwd(), filepath);
+const readFile = (filepath) => fs.readFileSync(getAbsolutePath(filepath), 'utf-8');
+const parseFile = (filepath) => JSON.parse(readFile(filepath));
 
-  const fileReading1 = readFileSync(pathFile1, 'utf-8');
-  const fileReading2 = readFileSync(pathFile2, 'utf-8');
+const genDiff = (filepath1, filepath2) => {
+  console.log('process.cwd()', process.cwd());
 
-  const json1 = JSON.parse(fileReading1);
-  const json2 = JSON.parse(fileReading2);
+  const file1Content = parseFile(filepath1);
+  const file2Content = parseFile(filepath2);
 
-  return [json1, json2];
+  console.log('Contents of file1.json:');
+  console.log(file1Content);
+  console.log('Contents of file2.json:');
+  console.log(file2Content);
 };
 
 export default genDiff;
