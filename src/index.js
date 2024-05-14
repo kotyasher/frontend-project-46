@@ -7,7 +7,7 @@ const readFile = (filepath) => fs.readFileSync(getAbsolutePath(filepath), 'utf-8
 const parseFile = (filepath) => JSON.parse(readFile(filepath));
 
 const genDiff = (filepath1, filepath2) => {
-  console.log('process.cwd()', process.cwd());
+  console.log('Directory:', process.cwd());
 
   const file1Content = parseFile(filepath1);
   const file2Content = parseFile(filepath2);
