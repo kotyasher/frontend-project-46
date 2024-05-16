@@ -8,7 +8,7 @@
   },
   "type": "module",
   "scripts": {
-    "test": "npx test"
+    "test": "jest"
   },
   "author": "Yulia Mishieva",
   "license": "ISC",
