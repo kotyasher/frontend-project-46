@@ -1,15 +1,22 @@
-import fs from 'fs';
-import path from 'path';
-import process from 'process';
 import _ from 'lodash';
 
-const getAbsolutePath = (filepath) => path.resolve(process.cwd(), filepath);
-const readFile = (filepath) => fs.readFileSync(getAbsolutePath(filepath), 'utf-8');
-const parseFile = (filepath) => JSON.parse(readFile(filepath));
+import { JSONparser, YMLparser } from './parsers.js';
+
 const genDiff = (filepath1, filepath2) => {
   let result = '';
-  const file1 = parseFile(filepath1);
-  const file2 = parseFile(filepath2);
+  let file1;
+  let file2;
+
+  const getFormat = (filepath) => filepath.split('.')[1];
+
+  if (getFormat(filepath1) === 'json') {
+    file1 = JSONparser(filepath1);
+    file2 = JSONparser(filepath2);
+  } else if (getFormat(filepath1) === 'yml') {
+    file1 = YMLparser(filepath1);
+    file2 = YMLparser(filepath2);
+  }
+
   const sortedKeys = _.sortBy(_.union(Object.keys(file1), Object.keys(file2)));
   sortedKeys.map((key) => {
     if (Object.hasOwn(file1, key) && Object.hasOwn(file2, key)) {

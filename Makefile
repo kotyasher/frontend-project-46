@@ -15,3 +15,6 @@ genfiff:
 
 run:
 	node bin/gendiff __fixtures__/file1.json __fixtures__/file2.json
+
+run-yml:
+	node bin/gendiff __fixtures__/file1.yml __fixtures__/file2.yml
