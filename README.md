@@ -11,5 +11,8 @@ Support for different input formats: yaml, json. Generating reports in the form 
 make install
 npm link
 ```
+## Minimum requirements:
+
+Node: 17.9.1
 
 
