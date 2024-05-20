@@ -15,7 +15,7 @@ npm link
 ```
 Node: 17.9.1
 ```
-##Usage:
+## Usage:
 ```
 gendiff -h
 
@@ -25,5 +25,26 @@ gendiff <path to file1> <path to file2>
 
 gendiff --format plain <path to file1> <path to file2>
 ```
+## Examples:
+
+Help and version
+
+[![asciicast](https://asciinema.org/a/atDwpC171pqHlLOy6YEqjTSCz.svg)](https://asciinema.org/a/atDwpC171pqHlLOy6YEqjTSCz)
+
+Two JSON files with nested objects compare (stylish formatter)
+
+[![asciicast](https://asciinema.org/a/PJdMPT6pWicPY5RqmSvGXzF5k.svg)](https://asciinema.org/a/PJdMPT6pWicPY5RqmSvGXzF5k)
+
+Two YML files with nested objects compare (stylish formatter)
+
+[![asciicast](https://asciinema.org/a/tBL4ZaVpClbWmrJ2GaWqtFIIw.svg)](https://asciinema.org/a/tBL4ZaVpClbWmrJ2GaWqtFIIw)
+
+Plain formatter
+
+[![asciicast](https://asciinema.org/a/SWdjbJJZdd88IMt1bMPdppoXo.svg)](https://asciinema.org/a/SWdjbJJZdd88IMt1bMPdppoXo)
+
+JSON formatter
+
+[![asciicast](https://asciinema.org/a/8Ap63NgdNG200PtK8nDzfDPL9.svg)](https://asciinema.org/a/8Ap63NgdNG200PtK8nDzfDPL9)
 
 
