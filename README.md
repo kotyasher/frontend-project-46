@@ -4,8 +4,12 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/59136b6da926c190baa5/maintainability)](https://codeclimate.com/github/kotyasher/frontend-project-46/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/59136b6da926c190baa5/test_coverage)](https://codeclimate.com/github/kotyasher/frontend-project-46/test_coverage)
 
+Support for different input formats: yaml, json. Generating reports in the form of plain text, stylish and json.
+
 ## Installation:
 ```
 make install
 npm link
 ```
+
+
