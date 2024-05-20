@@ -15,5 +15,15 @@ npm link
 ```
 Node: 17.9.1
 ```
+##Usage:
+```
+gendiff -h
+
+gendiff -V
+
+gendiff <path to file1> <path to file2>
+
+gendiff --format plain <path to file1> <path to file2>
+```
 
 
