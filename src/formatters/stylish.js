@@ -33,7 +33,7 @@ const stylish = (data) => {
         case 'hasChild':
           return `${currentReplacer}    ${key}: ${iter(value, depth + 1)}`;
         default:
-          throw new Error('ничего не работает(');
+          throw new Error('something needs to be fixed');
       }
     });
     return `{\n${result.join('\n')}\n${currentReplacer}}`;

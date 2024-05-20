@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/kotyasher/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/kotyasher/frontend-project-46/actions)",
+  "description": "Compares two configuration files and shows a difference.",
   "main": "src/index.js",
   "bin": {
     "gendiff": "bin/gendiff.js"
@@ -12,10 +12,6 @@
   },
   "author": "Yulia Mishieva",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kotyasher/frontend-project-46/issues"
-  },
-  "homepage": "https://github.com/kotyasher/frontend-project-46#readme",
   "dependencies": {
     "commander": "^12.0.0",
     "js-yaml": "^4.1.0",
