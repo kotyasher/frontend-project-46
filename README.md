@@ -12,7 +12,8 @@ make install
 npm link
 ```
 ## Minimum requirements:
-
+```
 Node: 17.9.1
+```
 
 
