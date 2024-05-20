@@ -11,7 +11,9 @@ const readfile = (filepath) => {
   const content = readFileSync(absolutePath, 'utf-8');
   return content;
 };
+
 const getExtension = (file) => file.split('.')[1];
+
 const genDiff = (filepath1, filepath2, format = 'stylish') => {
   const file1 = parseFile(getExtension(filepath1), readfile(filepath1));
   const file2 = parseFile(getExtension(filepath2), readfile(filepath2));
