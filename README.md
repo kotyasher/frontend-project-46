@@ -47,6 +47,6 @@ Plain formatter
 
 JSON formatter
 
-[![asciicast](https://asciinema.org/a/8Ap63NgdNG200PtK8nDzfDPL9.svg)](https://asciinema.org/a/8Ap63NgdNG200PtK8nDzfDPL9)
+[![asciicast](https://asciinema.org/a/1y0AwOZ5EFh2ccNMsgP7ejszJ.svg)](https://asciinema.org/a/1y0AwOZ5EFh2ccNMsgP7ejszJ)
 
 
