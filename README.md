@@ -24,6 +24,8 @@ gendiff -V
 gendiff <path to file1> <path to file2>
 
 gendiff --format plain <path to file1> <path to file2>
+
+gendiff --format json <path to file1> <path to file2>
 ```
 ## Examples:
 
