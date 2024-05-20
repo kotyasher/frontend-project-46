@@ -26,7 +26,7 @@ test('Main func YML', () => {
 });
 
 test('Stylish JSON YAML', () => {
-  const file1 = getFixturePath('file1.yml');
+  const file1 = getFixturePath('file1.json');
   const file2 = getFixturePath('file2.yml');
   const expected = readFile('resultStylish.txt');
 
